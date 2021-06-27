@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" xmlns:th="http://www.thymeleaf.org">
 <div th:replace="'layout/head' :: head"></div>
 
 <body>
@@ -17,49 +17,49 @@
           <!-- Nav items -->
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active" href="/">
+              <a class="nav-link active" th:href="@{/}">
                 <i class="ni ni-tv-2 text-primary"></i>
                 <span class="nav-link-text">Dashboard</span>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="pengurus/list">
+              <a class="nav-link" th:href="@{/pengurus/list}">
                 <i class="ni ni-planet text-orange"></i>
                 <span class="nav-link-text">Data Pengurus</span>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="imam/list">
+              <a class="nav-link" th:href="@{imam/list}">
                 <i class="ni ni-pin-3 text-primary"></i>
                 <span class="nav-link-text">Data Imam</span>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="khotib/list">
+              <a class="nav-link" th:href="@{khotib/list}">
                 <i class="ni ni-single-02 text-yellow"></i>
                 <span class="nav-link-text">Data Khotib</span>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="marbot/list">
+              <a class="nav-link" th:href="@{marbot/list}">
                 <i class="ni ni-bullet-list-67 text-default"></i>
                 <span class="nav-link-text">Data Marbot</span>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="muazin/list">
+              <a class="nav-link" th:href="@{muazin/list}">
                 <i class="ni ni-key-25 text-info"></i>
                 <span class="nav-link-text">Data Muazin</span>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="remaja/list">
+              <a class="nav-link" th:href="@{remaja/list}">
                 <i class="ni ni-circle-08 text-pink"></i>
                 <span class="nav-link-text">Data Remaja</span>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="yatimdandhuafa/list">
+              <a class="nav-link" th:href="@{yatimdandhuafa/list}">
                 <i class="ni ni-send text-dark"></i>
                 <span class="nav-link-text">Data Yatim Dan Dhuafa</span>
               </a>
@@ -205,10 +205,6 @@
                   <li class="breadcrumb-item active" aria-current="page">Data Pengurus</li>
                 </ol>
               </nav>
-            </div>
-            <div class="col-lg-6 col-5 text-right">
-              <a href="#" class="btn btn-sm btn-neutral">New</a>
-              <a href="#" class="btn btn-sm btn-neutral">Filters</a>
             </div>
           </div>
         </div>
